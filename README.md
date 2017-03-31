@@ -18,4 +18,6 @@ Remember there is a experimental lesson at 3/24 13:30-17:30 and 3/31 13:30-17:30
 * 腿在摆动时，大腿旋转的角度远远大于小腿，尤其是在奔跑时小腿可以看作是一直垂直与地面
 * 无论是胳膊还是腿向后旋转的角度并不大，可以考虑也可以忽略
 
+glPushMatrix()、glPopMatrix()：
+由于小胳膊既会自己摆动也会和大胳膊一起摆动，所以要用层次的思想来解决，opengl提供了glPushMatrix()、glPopMatrix()函数用于层次化绘制glPushMatrix()的作用是把矩阵压入栈中保存起来，留着以后再用，就好象把子弹压入枪膛一样，同时栈顶复制一份被压入的矩阵。所以调用glPushMatrix()之后的操作 
 
