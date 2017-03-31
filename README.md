@@ -10,6 +10,15 @@ If you have any issues about this project ,please send your issues before 3/24.T
 Remember there is a experimental lesson at 3/24 13:30-17:30 and 3/31 13:30-17:30<br>
     　　　　　　　　　　　   ![](https://github.com/Chicharito999/ImageCache/raw/master/image/stickman.gif)
 ## Analysis
+绘制木头人：
+* glutWireSphere(R, 20, 20);//渲染一个半径为R 横线竖线为20的球体
+* glScaled(l, w, h);//当前图形沿x,y,z轴分别放大为l，w，h倍   
+* glutWireCube(1);//画边长为1的一个正方体
+* glutWireCube(1)+glScaled(l, w, h)//绘制出一个长宽高为lwh的长方体
+* glClipPlane(GL_CLIP_PLANE0, eqn);//设定切割模式为切割下半部分
+* glutWireSphere(R, 20, 20);//渲染一个半径为R 横线竖线为20的球体
+* glClipPlane(GL_CLIP_PLANE0, eqn)+glutWireSphere(R, 20, 20)//绘制一个球体的上半部分
+
 思考人在走路或奔跑时的特征：
 * 开始时，左右腿中一只腿先动，同时相反方向的胳膊开始向上摆动
 * 随后，当先开始摆动的腿或胳膊往回摆时，另一对腿和胳膊开始向上摆动
