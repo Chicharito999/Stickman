@@ -95,3 +95,6 @@ glPopMatrix();//栈顶矩阵出栈  回到右肩膀处
 ```
 
 ## Display
+![](https://github.com/Chicharito999/ImageCache/raw/master/image/EV~2017.04_clip2.gif)
+![](https://github.com/Chicharito999/ImageCache/raw/master/image/EV~2017.04_clip3.gif)
+![](https://github.com/Chicharito999/ImageCache/raw/master/image/EV~2017.04_clip4.gif)
